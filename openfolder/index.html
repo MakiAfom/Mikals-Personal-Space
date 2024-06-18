@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mikal Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/mikyWeb.png" alt="Miky Web" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Fullstack Web Developer</p>
+                    <h1>I'm Mikal<span>dedicated and innovative</span><br> Full Stack Developer With a strong foundation
+                        in back-end development.</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/Mikal.jpg" alt="Mikal">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>As a backend developer, I specialize in utilizing frameworks and languages such as MERN stack
+                            and Python. My expertise
+                            lies in being detail-oriented and delivering high-quality results. With a focus on
+                            designing, developing, debugging, and
+                            optimizing websites, I ensure optimal performance and user experience. Additionally, I excel
+                            in integrating REST APIs to
+                            further enhance functionality and connectivity.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div id="Skills" class="tab-contents active-tab">
+                            <ul>
+                                <li><span>Programming Languages:</span> Python , javaScript</li>
+                                <li><span>Web Development </span> MERN Stack
+                                    HTML and CSS nonSQL Database Management</li>
+                                <li><span>Database Management</span> Database design, structure, and management
+                                    knowledge</li>
+                                <li><span>API Integration</span> REST API integration</li>
+                            </ul>
+                        </div>
+                        <div id="Education" class="tab-contents">
+                            <ul>
+                                <li><span>2020-current</span> Programming Language MIT React and Bootcamps for
+                                    programming</li>
+                                <li><span>2023-2024 </span>Dot Ethopia & Naamal agency</li>
+                                <li><span>2022-2024</span> Dot Ethopia</li>
+                                <li><span>2022-2023</span> REST API integration Development Dot Ethopia </li>
+                            </ul>
+                        </div>
+                        <div id="Experience" class="tab-contents">
+                            <ul>
+                                <li><span>2024-current</span> Web development Design and development of platform</li>
+                                <li><span>2023-2024</span> Web development Design at Intern Career ,Cognifz Technology
+                                </li>
+                                <li><span>2021-2022</span>REST API Integration e
+                                    Commerce </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--------------------------------Services-------------------->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="'sub-title">My Works</h1>
+                <div class="works-list">
+                    <div>
+                        <h2>Web Design</h2>
+
+                        <p>As website Developer I wanted to tell as a Website Developer I have come up to build some
+                            websites and the lists are MERN Todo List Blog-App Calculator Website </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>Back end Developer </h2>
+
+                        <p>I have used crud operation in building portfilio </p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <script>
+            var tabLinks = document.getElementsByClassName('tab-links');
+            var tabContents = document.getElementsByClassName('tab-contents');
+            function openTab(tabName) {
+                // Hide all tab contents
+
+                for (tabContent of tabContents) {
+
+                    tabContents.forEach(tabContent => {
+                        tabContent.classList.remove('active-tab');
+                    });
+
+                    // Remove active class from all tab links
+
+
+                    for (tablink of tabLinks) {
+                        tablink.classList.remove('active-link');
+                    }
+                }
+            };
+
+            // Show the selected tab content
+            document.getElementById(tabName).classList.add('active-tab');
+
+            // Add active class to the selected tab link
+            event.currentTarget.classList.add('active');
+            document.getElementById(tabName).classList.add('active-tab');
+
+        </script>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Mikal. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>
+
+</body>
+
+</html>
